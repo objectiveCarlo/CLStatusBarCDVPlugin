@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rim="http://www.blackberry.com/ns/widgets" id="cl.cordova.plugin.share" version="0.1.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rim="http://www.blackberry.com/ns/widgets" id="cl.cordova.plugin.statusbar" version="0.1.1">
    <name>CLShare</name>
-   <description>Cordova CL Status bar Plugin</description>
+   <description>Cordova CL Statusbar Plugin</description>
    <license>Apache 2.0</license>
    <keywords>cordova,share</keywords>
    <repo> https://github.com/objectiveCarlo/CLStatusBarCDVPlugin.git  </repo>
