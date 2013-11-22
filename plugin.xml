@@ -6,7 +6,7 @@
    <keywords>cordova,share</keywords>
    <repo> https://github.com/objectiveCarlo/CLStatusBarCDVPlugin.git  </repo>
   
-   <js-module src="www/clstatusbarcdvplugin.js" name="statusbar">
+   <js-module src="www/clstatuscdvplugin.js" name="statusbar">
       <clobbers target="CLStatusBar" />
    </js-module>
 
