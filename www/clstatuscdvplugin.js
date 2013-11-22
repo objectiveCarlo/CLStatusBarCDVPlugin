@@ -7,7 +7,7 @@ var CLStatusCDVPluginClass = function () {
     var kClassName = "CLStatusBarCDVPlugin";
     var self = this;
 
-    self.changeStatusBarColor function(isBlack)
+    self.changeStatusBarColor = function(isBlack)
     {
         if(typeof exec === 'undefined')
             {
