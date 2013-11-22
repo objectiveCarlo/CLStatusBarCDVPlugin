@@ -4,7 +4,7 @@
    <description>Cordova CL Status bar Plugin</description>
    <license>Apache 2.0</license>
    <keywords>cordova,share</keywords>
-   <repo> https://github.com/objectiveCarlo/CLCDVSharePlugin.git </repo>
+   <repo> https://github.com/objectiveCarlo/CLStatusBarCDVPlugin.git  </repo>
   
    <js-module src="www/clstatusbarcdvplugin.js" name="statusbar">
       <clobbers target="CLStatusBar" />
