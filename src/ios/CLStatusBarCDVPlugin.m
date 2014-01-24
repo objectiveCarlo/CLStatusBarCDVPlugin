@@ -7,7 +7,7 @@
 //
 
 #import "CLStatusBarCDVPlugin.h"
-
+#import "MainViewController.h"
 @implementation CLStatusBarCDVPlugin
 - (void)changeStatusBarColor:(CDVInvokedUrlCommand*)command
 {
@@ -15,16 +15,24 @@
      if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7)
      {
          NSString *setup = [command argumentAtIndex:0];
-    
-        if([self isBlack:setup])
-        {
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent
-                                                        animated:YES];
-        }else
-        {
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent
-                                                        animated:YES];
-        }
+        
+      
+         
+         if([self.viewController isKindOfClass:[MainViewController class]]){
+             MainViewController *cont = (MainViewController *)self.viewController;
+             
+            
+             
+             if([self isBlack:setup])
+                   cont.style = UIStatusBarStyleDefault;
+              else
+             
+                   cont.style = UIStatusBarStyleLightContent;
+              
+         }
+         
+            [self.viewController setNeedsStatusBarAppearanceUpdate];
+         
      }
     
     
